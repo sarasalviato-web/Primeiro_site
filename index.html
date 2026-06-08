@@ -1,11 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Agrofuturo Digital | O Amanhã no Campo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-regular-icons/6.4.0/css/all.min.css">
 </head>
 <body>
-    
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h2>Agrofuturo <span>Digital</span></h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#pilares">Pilares</a></li>
+                    <li><a href="#interativo">Simulador</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>A agricultura do amanhã é tecnológica e sustentável.</h1>
+            <p>Descubra como a inovação digital protege o meio ambiente e transforma a produção de alimentos.</p>
+            <a href="#pilares" class="btn">Explorar Portal</a>
+        </div>
+    </section>
+
+    <section id="pilares" class="pilares-section">
+        <div class="container">
+            <h2 class="section-title">Como tudo se conecta?</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="icon">🚜</div>
+                    <h3>Tecnologia</h3>
+                    <p>Drones, sensores IoT e inteligência artificial otimizando o plantio e evitando o desperdício de recursos.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🌱</div>
+                    <h3>Preservação</h3>
+                    <p>Práticas agrícolas que regeneram o solo, protegem nascentes e reduzem a pegada de carbono.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🌾</div>
+                    <h3>Agricultura</h3>
+                    <p>O campo produzindo mais e melhor, garantindo a segurança alimentar para as próximas gerações.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="interativo" class="interactive-section">
+        <div class="container">
+            <h2 class="section-title">Simulador Agrofuturo</h2>
+            <p class="section-subtitle">Escolha uma tecnologia para ver o impacto real na fazenda:</p>
+            
+            <div class="sim-controls">
+                <button class="btn-sim" data-tech="drone">Drones de Precisão</button>
+                <button class="btn-sim" data-tech="sensor">Sensores de Solo</button>
+                <button class="btn-sim" data-tech="refloresta">Reflorestamento</button>
+            </div>
+
+            <div id="sim-result" class="sim-result-box">
+                <p>💡 Clique em um dos botões acima para simular a inovação no campo!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <div class="container footer-container">
+            <p>&copy; 2026 Agrofuturo Digital. Conectando jovens ao futuro sustentável.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
